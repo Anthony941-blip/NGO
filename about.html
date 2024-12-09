@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NGO</title>
+  <!-- Add the favicon here -->
+  <link rel="icon" type="NGO" href="Logo.PNG"> <!-- Update this path with your actual favicon image -->
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+    }
+
+    header {
+        background-color: Teal; 
+        padding: 2rem;
+        color: #fff; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px; 
+    }
+
+    .nav-header {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-header a {
+        color: #5D536B;
+        background-color: #ADD8E6; 
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-header a:hover {
+        background-color: lightgreen; 
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 40px;
+    }
+
+    .core-values ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .core-values li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .profile-picture {
+        border-radius: 50%; 
+        width: 150px; 
+        height: 150px;
+        border: 5px solid #800080; 
+        object-fit: cover;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .leadership-team {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .leader {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .banner {
+      text-align: center;
+      background-color: #333;
+      padding: 20px;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #6fcb9f ; 
+      padding: 2rem;
+      text-align: center;
+      color: #5D536B;
+      border-top: 2px solid #D5B0FF;
+    }
+	  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2><img src="Logo.PNG" alt="Logo"></h2>
+    <p>"Empowering Lives, Transforming Communities: A Better Life on Earth for All."</p>
+    <nav class="nav-header">
+        <a href="index.html">Home</a>
+        <a href="program.html">Our Programs</a>
+        <a href="involve.html">Get Involved</a>
+        <a href="resource.html">Resources</a>
+		<a href="contact.html">Contact us</a>
+    </nav>
+  </header>
+  
+   <header>
+      <h1>About Us</h1>
+  </header>
+  
+ <section>
+    <div class="container">
+      <h1 class="section-title">Our Mission and Vision</h1>
+      <p><strong>Mission:</strong> To empower communities by providing access to education, healthcare, and economic opportunities.</p>
+      <p><strong>Vision:</strong> A world where every individual has the tools to thrive, regardless of their background.</p>
+
+      <!-- Core Values Section -->
+      <div class="core-values">
+        <h2 class="section-title">Core Values</h2>
+        <ul>
+          <li>Empathy and Compassion</li>
+          <li>Innovation and Growth</li>
+          <li>Integrity and Transparency</li>
+          <li>Collaboration and Community</li>
+          <li>Respect for Diversity</li>
+        </ul>
+      </div>
+
+      <!-- Geographic Reach (Interactive Map) -->
+      <h2 class="section-title">Geographic Reach</h2>
+      <!-- You can use a service like Google Maps API or Leaflet to embed an interactive map -->
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951572.5636949306!2d-89.63945670818977!3d17.186491729408047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5c5b3ec112faf9%3A0xf64a8a4d3f1ee34e!2sBelize!5e0!3m2!1sen!2sbz!4v1733770303186!5m2!1sen!2sbz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- Leadership Team Section -->
+      <div class="leadership-team">
+        <h2 class="section-title">Our Leadership Team</h2>
+
+        <!-- Example Leader Profile -->
+        <div class="leader">
+          <img src="leader1.jpg" alt="Leader Name" class="profile-picture">
+          <h3>Leader Name</h3>
+          <p>Bio: Brief description of the leader's experience and role.</p>
+        </div>
+
+        <div class="leader">
+          <img src="leader2.jpg" alt="Leader Name" class="profile-picture">
+          <h3>Leader Name</h3>
+          <p>Bio: Brief description of the leader's experience and role.</p>
+        </div>
+
+        <!-- Add more leaders as needed -->
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&#169; Powered by NGO</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIKXbpyZXyX0F5pMQ9DXe5U6wevKbsHqFkhb37lqotfj+ntVws3vZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1VtqVp87pOuN6q8h5/D9C7i3O4jPHX48j3VcC8cXlmjnp5O89Vu4ol" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQK7+u7jOq5jyO3aX0Q0E7mQOW44u5KN63B7jZ" crossorigin="anonymous"></script>
+</body>
+</html>

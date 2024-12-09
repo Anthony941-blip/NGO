@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Better Life on Earth</title>
+  <!-- Favicon -->
+  <link rel="icon" href="Logo.PNG" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+    }
+
+    header {
+      background-color: Teal;
+      padding: 2rem;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .nav-header {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .nav-header a {
+      color: #5D536B;
+      background-color: #ADD8E6;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-header a:hover {
+      background-color: lightgreen;
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: Teal;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      background-color: #6fcb9f;
+      padding: 2rem;
+      text-align: center;
+      color: #5D536B;
+      border-top: 2px solid #D5B0FF;
+    }
+
+    footer a {
+      color: #5D536B;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #004d40;
+    }
+
+    .social-media-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .social-media-links a {
+      font-size: 1.5rem;
+      color: #5D536B;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-media-links a:hover {
+      color: #007bff;
+    }
+
+    .location-details {
+      margin-bottom: 3rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2><img src="Logo.PNG" alt="Logo"></h2>
+    <nav class="nav-header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="program.html">Our Programs</a>
+        <a href="involve.html">Get Involved</a>
+        <a href="resource.html">Resources</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h1 class="section-title">Contact Us</h1>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h3>We'd love to hear from you!</h3>
+      <form action="submit_contact_form.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Office Locations -->
+    <div class="location-details">
+      <h2 class="section-title">Our Office Locations</h2>
+      <p><strong>Headquarters:</strong> 123 Global Street, New York, NY, USA</p>
+      <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+      <p><strong>Email:</strong> info@betterlife.org</p>
+
+      <h3>Regional Offices:</h3>
+      <h4>Americas:</h4>
+      <p><strong>Location:</strong> 456 North Ave, Rio de Janeiro, Brazil</p>
+      <p><strong>Phone:</strong> +55 (21) 1234-5678</p>
+      <p><strong>Email:</strong> americas@betterlife.org</p>
+
+      <h4>Africa:</h4>
+      <p><strong>Location:</strong> 789 Sunshine Blvd, Nairobi, Kenya</p>
+      <p><strong>Phone:</strong> +254 (20) 9876-5432</p>
+      <p><strong>Email:</strong> africa@betterlife.org</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-media-links">
+      <a href="https://facebook.com/BetterLifeOnEarth" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/BetterLifeEarth" target="_blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com/BetterLifeOnEarth" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/company/BetterLifeOnEarth" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&#169; Powered by NGO | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIKXbpyZXyX0F5pMQ9DXe5U6wevKbsHqFkhb37lqotfj+ntVws3vZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1VtqVp87pOuN6q8h5/D9C7i3O4jPHX48j3VcC8cXlmjnp5O89Vu4ol" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQK7+u7jOq5jyO3aX0Q0E7mQOW44u5KN63B7jZ" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome for Social Media Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Involved - Better Life on Earth</title>
+  <!-- Favicon -->
+  <link rel="icon" href="Logo.PNG" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+    }
+
+    header {
+        background-color: Teal;
+        padding: 2rem;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .nav-header {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-header a {
+        color: #5D536B;
+        background-color: #ADD8E6;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-header a:hover {
+        background-color: lightgreen;
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .cta-buttons a {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+        background-color: #45a049;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: Teal;
+    }
+
+    .volunteer-form, .donation-form {
+        background-color: #FFF;
+        border-radius: 10px;
+        padding: 2rem;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin-bottom: 3rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    footer {
+        background-color: #6fcb9f;
+        padding: 2rem;
+        text-align: center;
+        color: #5D536B;
+        border-top: 2px solid #D5B0FF;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2><img src="Logo.PNG" alt="Logo"></h2>
+    <nav class="nav-header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="program.html">Our Programs</a>
+        <a href="resource.html">Resources</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h1 class="section-title">Get Involved: Make a Difference Today!</h1>
+    
+    <!-- Volunteer Opportunities -->
+    <div class="volunteer-form">
+      <h2 class="section-title">Volunteer Opportunities</h2>
+      <p>Join our team of changemakers and help improve lives in our communities.</p>
+      <p>Complete the online application form below to get started:</p>
+      <form action="/submit_volunteer_form" method="post">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Why do you want to volunteer with us?</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+      </form>
+    </div>
+
+    <!-- Donation Options -->
+    <div class="donation-form">
+      <h2 class="section-title">Donation Options</h2>
+      <p>Your contributions help us empower lives and transform communities. Choose a donation method that works best for you:</p>
+      
+      <h4>Donation Methods:</h4>
+      <ul>
+        <li>Monthly Giving</li>
+        <li>One-time Contributions</li>
+        <li>Sponsorships</li>
+      </ul>
+      
+      <h4>Payment Integration Options:</h4>
+      <ul>
+        <li>PayPal</li>
+        <li>Credit Card</li>
+        <li>Bank Transfer</li>
+      </ul>
+
+      <div class="cta-buttons">
+        <a href="donate.html">Donate Now</a>
+      </div>
+    </div>
+
+    <!-- Corporate Partnerships -->
+    <div class="corporate-partnerships">
+      <h2 class="section-title">Corporate Partnerships</h2>
+      <p>Businesses can play a crucial role in supporting our mission. Explore opportunities for your company to collaborate with us and make a lasting impact.</p>
+      <p>Contact us for more information about partnership opportunities.</p>
+      <div class="cta-buttons">
+        <a href="contact.html">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- Upcoming Events -->
+    <div class="upcoming-events">
+      <h2 class="section-title">Upcoming Events</h2>
+      <p>Join us for fundraisers, webinars, and community events that make a difference!</p>
+
+      <h4>Upcoming Events Calendar:</h4>
+      <ul>
+        <li>January 15, 2024: Fundraiser Gala</li>
+        <li>February 20, 2024: Virtual Webinar on Community Health</li>
+        <li>March 5, 2024: Charity Walkathon</li>
+      </ul>
+
+      <div class="cta-buttons">
+        <a href="events.html">View All Events</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="cta-buttons">
+      <a href="donate.html">Donate Now</a>
+      <a href="join.html">Join Us</a>
+    </div>
+    <p>&#169; Powered by NGO</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIKXbpyZXyX0F5pMQ9DXe5U6wevKbsHqFkhb37lqotfj+ntVws3vZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1VtqVp87pOuN6q8h5/D9C7i3O4jPHX48j3VcC8cXlmjnp5O89Vu4ol" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQK7+u7jOq5jyO3aX0Q0E7mQOW44u5KN63B7jZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
