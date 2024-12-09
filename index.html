@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NGO</title>
+  <!-- Add the favicon here -->
+  <link rel="icon" href="Logo.PNG" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+    }
+    
+    header {
+        background-color: Teal; 
+        padding: 2rem;
+        color: #fff; /* white */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px; /* space between title and nav */
+    }
+
+    /* bar in header */
+    .nav-header {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav-header a {
+        color: #5D536B;
+        background-color: #ADD8E6; /* baby blue */
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-header a:hover {
+        background-color: lightgreen; /* color changes on hover */
+    }
+
+    /* Article section */
+    .background-section {
+        background-color: #FFEBEE; /* pink background for article / section */
+        padding: 3px;
+        font-weight: bold;
+        border-radius: 10px; /* shape of section */
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .profile-picture {
+        border-radius: 50%; /* Circular image */
+        width: 280px; /* Shape of image */
+        height: 280px;
+        border: 5px solid #800080; /* Purple border around picture */
+        object-fit: cover; /* Ensures the image fits the circular frame */
+        margin-right: 20px; /* Space between image and text */
+        margin-bottom: 10px;
+    }
+
+    .background-section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+  
+    /* Footer */
+     footer {
+        background-color: #6fcb9f ; /* light teal */
+        padding: 2rem; /* space */
+        text-align: center;
+        color: #5D536B;
+        border-top: 2px solid #D5B0FF;
+    }
+
+    @keyframes footerFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .project-list a {
+      display: block;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .project-list a:hover {
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .glowing-text {
+      font-size: 3em;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      animation: neonGlow 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes neonGlow {
+      0% { text-shadow: 0 0 10px #ff4c4c, 0 0 20px #ff4c4c, 0 0 30px #ff4c4c; }
+      100% { text-shadow: 0 0 30px #ff4c4c, 0 0 40px #ff4c4c, 0 0 50px #ff4c4c; }
+    }
+	
+	
+	 .banner {
+      text-align: center;
+      background-color: #333;
+      padding: 20px;
+    }
+    .banner img {
+      width: 100%; /* Ensures the image is responsive */
+      height: auto;
+	  display: block;
+    }
+	
+	 /* CTA Button styling */
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .cta-buttons a {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background-color: #4CAF50; /* Green background */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #45a049; /* Slightly darker green */
+    }
+
+
+	
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2><img src="Logo.PNG" alt="Logo"></h2>
+    <!-- Navigation added from the first code -->
+    <nav class="nav-header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="program.html">Our Programs</a>
+        <a href="involve.html">Get Involved</a>
+        <a href="resource.html">Resources</a>
+		<a href="contact.html">Contact us</a>
+    </nav>
+  </header>
+  
+   <div class="banner">
+    <img src="banner.png" alt="Banner Image">
+  </div>
+
+  <section>
+    <div class="container">
+      <article>
+
+        <h1>"Empowering Lives, Transforming Communities: A Better Life on Earth for All."</h1>
+        <p>Better Life on Earth International is dedicated to improving lives through education, healthcare, advocacy, and economic empowerment in the Americas and Africa.</p>
+
+        <div class="project-list">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            
+            <p>Over 1 million lives impacted across two continents.</p>	
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+     <div class="cta-buttons">
+          <a href="donate.html">Donate Now</a>
+          <a href="join.html">Join Us</a>
+        </div>
+    <p>&#169; Powered by NGO</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIKXbpyZXyX0F5pMQ9DXe5U6wevKbsHqFkhb37lqotfj+ntVws3vZ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1VtqVp87pOuN6q8h5/D9C7i3O4jPHX48j3VcC8cXlmjnp5O89Vu4ol" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQK7+u7jOq5jyO3aX0Q0E7mQOW44u5KN63B7jZ" crossorigin="anonymous"></script>
+</body>
+</html>
